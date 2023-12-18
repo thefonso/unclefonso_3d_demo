@@ -63,15 +63,16 @@ const Wrapper = styled.div`
   // overflow-x: hidden;
 
   .splineClass {
-    width: 60% !important;
+    width: 70% !important;
     height: 0% !important;
     position: absolute;
     margin: 0;
     top: 0;
-    right: 0;
+    right: 95px;
 
     @media (max-width: 1024px) {
-      transform: scale(0.5) translateX(-300px); //iPhone 12 pro horz
+      top: 10px;
+      transform: scale(0.4) translateX(-80px); //iPhone 12 pro horz
       transform-origin: top;
     }
     @media (max-width: 800px) {
@@ -104,7 +105,7 @@ const Content = styled.div`
   gap: 80px;
 
   @media (max-width: 1024px) {
-    gap: 40px;
+    gap: 20px;
   }
 
   h1 {
@@ -125,7 +126,7 @@ const Content = styled.div`
       max-width: 300px;
     }
     @media (max-width: 768px) {
-      font-size: 67px;
+      /* font-size: 67px; */
       max-width: 300px;
     }
     @media (max-width: 600px) {
