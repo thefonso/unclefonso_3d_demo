@@ -71,17 +71,20 @@ const Wrapper = styled.div`
     right: 0;
 
     @media (max-width: 1024px) {
-      transform: scale(0.8) translateX(200px);
+      transform: scale(0.5) translateX(-300px); //iPhone 12 pro horz
       transform-origin: top;
     }
     @media (max-width: 800px) {
       transform: scale(0.7) translateX(600px);
     }
+    @media (max-width: 768px) {
+      transform: scale(0.5) translateX(-400px);
+    }
     @media (max-width: 600px) {
-      transform: scale(0.5) translateX(-100px);
+      transform: scale(0.4) translateX(-330px); //Pro 12 vert
       right: auto;
-      left: 50%;
-      margin-left: -600px;
+      /* left: 50%; */
+      /* margin-left: -600px; */
     }
     @media (max-width: 375px) {
       transform: scale(0.45) translateX(-50px);
@@ -114,11 +117,15 @@ const Content = styled.div`
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 1024px) {
-      font-size: 60px;
+      //font-size: 27px;//Pro 12 iPhone Hz
       max-width: 400px;
     }
-    @media (max-width: 800px) {
-      font-size: 40px;
+    @media (max-width: 850px) {
+      font-size: 27px;
+      max-width: 300px;
+    }
+    @media (max-width: 768px) {
+      font-size: 67px;
       max-width: 300px;
     }
     @media (max-width: 600px) {
