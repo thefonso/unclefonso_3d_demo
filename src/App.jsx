@@ -72,14 +72,14 @@ const Wrapper = styled.div`
 
     @media (max-width: 1024px) {
       top: 10px;
-      transform: scale(0.4) translateX(-80px); //iPhone 12 pro horz
+      transform: scale(0.6) translateX(-80px); 
       transform-origin: top;
     }
-    @media (max-width: 800px) {
-      transform: scale(0.7) translateX(600px);
+    @media (max-width: 850px) {
+      transform: scale(0.4) translateX(10px);
     }
     @media (max-width: 768px) {
-      transform: scale(0.5) translateX(-400px);
+      transform: scale(0.5) translateX(-200px);
     }
     @media (max-width: 600px) {
       transform: scale(0.4) translateX(-330px); //Pro 12 vert
@@ -126,7 +126,6 @@ const Content = styled.div`
       max-width: 300px;
     }
     @media (max-width: 768px) {
-      /* font-size: 67px; */
       max-width: 300px;
     }
     @media (max-width: 600px) {
